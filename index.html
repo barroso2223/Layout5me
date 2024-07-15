@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>One-Page Layout</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <header> 
+        <nav> 
+            <ul> 
+                <a href="#home">Home</a></li> 
+                <a href="#about">About</a></li> 
+                <a href="#services">Services</a></li> 
+                <a href="#gallery">Gallery</a></li> 
+                <a href="#contact">Contact</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+    
+    <section id="home"> 
+        <div class="split">
+            <div>
+                <img src="images/1.png" alt="threading eyebrow">
+            </div>
+            <div>
+                <h1>Welcome to My Website</h1> 
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section> 
+    
+    <section id="about" class="bg900"> 
+        <div class="split">
+            <div>
+                <h2>About Me</h2> 
+                <p>With over 5 years of experience in the beauty industry, I specialize in providing high-quality facials, eyebrow services, microdermabrasion, and more. My commitment to excellence and passion for beauty is evident in every treatment I offer. I take great pride in my work and strive to ensure every customer leaves completely satisfied. My extensive experience and dedication to exceptional customer service have earned me many loyal and happy clients. I look forward to helping you achieve your beauty goals and providing a relaxing, rejuvenating experience.</p> 
+            </div>
+            <div>
+                <img src="images/Eyebrow Specialist.png" alt="eyebrow specialist with client in chair">
+            </div>
+        </div>
+    </section> 
+    
+    <section id="services" class="bg100"> 
+        <div class="split">
+            <div>
+                <img src="" alt="">
+            </div>
+            <div>
+                <h2>Services</h2> 
+                <p>Details about services offered.</p> 
+            </div>
+        </div>
+    </section> 
+    
+    <section id="gallery"> 
+        <div> <!-- Gallery items --> 
+            <div>
+                <h2>Gallery</h2> 
+            </div>
+            <div class="galleryGrid">
+                <div class="card cardTall">
+                    <img src="images/2.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/3.png" alt="">
+                </div>
+                <div class="card cardWide">
+                    <img src="images/4.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/5.png" alt="">
+                </div>
+                <div class="card cardTall">
+                    <img src="images/6.png" alt="">
+                </div>
+                <div class="card cardTall zoomOut">
+                    <img src="images/7.png" alt="">
+                </div>
+                <div class="card cardWide">
+                    <img src="images/8.png" alt="">
+                </div>
+            </div>
+        </div> 
+    </section> 
+    
+    <section id="contact"> 
+        <h2>Contact</h2> 
+        <div class="form">
+            <p>Need help creating, fixing, or updating your website? Fill out the form below, and I'll get back to you promptly. Whether you're starting from scratch, looking to enhance your existing site, or need specific updates, I'm here to assist. Your online presence is crucial, and I'm committed to helping you achieve a website that meets your needs and exceeds your expectations. Contact me today, and let's bring your vision to life!</p>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="fields">
+                    <input type="hidden" name="access_key" value="de5eca23-614c-41d1-93d8-6e1dae2c2f11">
+                    <div class="field half">
+                        <input type="text" name="name" id="name" placeholder="Name" />
+                    </div>
+                    <div class="field half">
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                    </div>
+                    <div class="field">
+                        <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" class="button primary" /></li>
+                </ul>
+            </form>
+            <div class="contactInfo">
+                <a href="#" class="fa-solid fa-mobile-screen fa-2x"><br/>Call Me!</a>
+                <a href="#">Email Me!</a><i class="fa-sharp fa-regular fa-envelope fa-2x"></i>
+            </div>
+        </div>
+        <div class="faFonts">
+            <i class="fa-brands fa-x-twitter fa-2x"></i>
+            <i class="fa-brands fa-square-instagram fa-2x"></i>
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+            <i class="fa-brands fa-square-github fa-2x"></i>
+        </div>
+    </section> 
+    
+    <footer> 
+        <p>&copy; 2024 Daniel Barroso Website</p> 
+    </footer> 
+</body> 
+</html> 
