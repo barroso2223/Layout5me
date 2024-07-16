@@ -18,7 +18,7 @@
 body {
     font-family: var(--ffTheme);
     font-weight: 400;
-    font-size: 1.3125rem;
+    font-size: 1rem;
     line-height: 1.6;
     background: var(--clrMain900);
     color: var(--clrMain100);
@@ -46,16 +46,23 @@ p {
     margin-bottom: 1em;
 }
 
+.card {
+    border-radius: .5rem;
+    box-shadow: 2px 2px 2px var(--clrMain100);
+}
+
 #home,
 #about,
 #services,
 #testimonials,
 #gallery {
     min-height: 100dvh;
+    max-width: 100dvw;
 }
 
 #contact {
     min-height: 90dvh;
+    max-width: 100dvw;
 }
 
 
@@ -80,67 +87,86 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     overflow: hidden;
     padding: 2rem;
+    margin: 1em 2em;
     gap: 3rem;
 }
 
 header { 
     background: linear-gradient(to left, 
         var(--clrTheme100) 30%, var(--clrTheme900)); 
-    color: white; 
+    color: var(--clrMain100); 
     text-align: center; 
     text-decoration: none;
 } 
 
 nav {
     position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 11dvh;
-    padding: 1rem 6.5rem;
     background: linear-gradient(to left, 
     var(--clrTheme100) 30%, var(--clrTheme900)); 
     z-index: 100000;
 }
 
+nav ul {
+    display: none;
+}
+
 .logo {
     font-family: "Cedarville Cursive";
     font-size: 2rem;
-}
-
-nav * {
-    text-decoration: none;
-    color: var(--clrMain100);
-    font-size: .75rem;
-}
-
-nav h2 {
     padding-top: 1rem;
 }
 
-nav ul { 
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-    display: flex; 
-    justify-content: space-around; 
-    flex-wrap: wrap; 
-    text-decoration: none;
-    font-size: 1rem;
+@media screen and (min-width: 850px) {
+    nav {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 11dvh;
+        padding: 1rem 3rem;
+        background: linear-gradient(to left, 
+        var(--clrTheme100) 30%, var(--clrTheme900)); 
+        z-index: 100000;
+    }
+    nav * {
+        text-decoration: none;
+        color: var(--clrMain100);
+        font-size: .75rem;
+    }
     
-} 
+    nav h2 {
+        padding-top: 1rem;
+    }
+    
+    nav ul { 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+        display: flex; 
+        justify-content: space-around; 
+        flex-wrap: wrap; 
+        text-decoration: none;
+        font-size: 1rem;
+        
+    } 
+    
+    nav ul li { 
+        margin: 0 10px; 
+        padding-top: .75rem;
+        text-decoration: none;
+        color: var(--clrMain100);
+    } 
+    
+    nav .faFonts {
+        padding-bottom: 1rem;
+    }
 
-nav ul li { 
-    margin: 0 10px; 
-    padding-top: .75rem;
-    text-decoration: none;
-    color: var(--clrMain100);
-} 
-
-nav .faFonts {
-    padding-bottom: 1rem;
 }
 
 section { 
@@ -154,14 +180,18 @@ section {
     background: url(images/1.png);
     background-size: cover;
     opacity: 80%;
-    padding-top: 5%;
-    color: var(--clrTheme900);
+    padding-top: 5rem;
+    color: var(--clrMain100);
 }
 
 #home .split div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#about, #services {
+
 }
 
 #services {
