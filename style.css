@@ -62,29 +62,6 @@ p {
     padding-top: 5rem;
 }
 
-@media screen and (max-screen: 500px) {
-    #home,
-    #about,
-    #services,
-    #testimonials,
-    #gallery,
-    #contact {
-        min-height: 100dvh;
-        max-width: 100dvw;
-        padding-top: 5rem;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        place-content: center;
-        place-items: center;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        font-size: .75rem;
-    }
-
-}
-
 
 .img {
     display: block;
