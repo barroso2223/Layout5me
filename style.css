@@ -173,29 +173,25 @@ section {
 #home {
     background: linear-gradient(to left, 
     var(--clrTheme100) 30%, var(--clrTheme900)); 
-    background: url(images/1.png);
-    background-size: cover;
-    opacity: 90%;
     padding-top: 5rem;
     color: var(--clrMain100);
 }
 
 .homeText {
-    text-align: center;
-    margin: 6rem 15rem;
-    place-content: center;
+    text-align: left;
+    place-items: center;
 }
 
 .homeText p {
     font-family: "Cedarville Cursive";
-    font-size: 4rem;
-    margin-bottom: -1rem;
+    font-size: 3rem;
+    margin-bottom: -.5rem;
 }
 
 .homeText h1 {
     font-weight: 300;
-    font-size: 2rem;
-    line-height: 1.6;
+    font-size: 1.25rem;
+    line-height: 1.4;
 }
 
 #services {
