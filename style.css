@@ -86,14 +86,37 @@ header {
     background: linear-gradient(to left, 
         var(--clrTheme100) 30%, var(--clrTheme900)); 
     color: white; 
-    padding: 1rem 0; 
     text-align: center; 
     text-decoration: none;
 } 
 
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 11dvh;
+    padding: 1rem 6.5rem;
+    background: linear-gradient(to left, 
+    var(--clrTheme100) 30%, var(--clrTheme900)); 
+    z-index: 100000;
+}
+
+.logo {
+    font-family: "Cedarville Cursive";
+    font-size: 2rem;
+}
+
 nav * {
     text-decoration: none;
     color: var(--clrMain100);
+    font-size: .75rem;
+}
+
+nav h2 {
+    padding-top: 1rem;
 }
 
 nav ul { 
@@ -110,14 +133,14 @@ nav ul {
 
 nav ul li { 
     margin: 0 10px; 
+    padding-top: .75rem;
     text-decoration: none;
     color: var(--clrMain100);
 } 
 
-nav ul li a { 
-    color: var(--clrMain100); 
-    text-decoration: none; 
-} 
+nav .faFonts {
+    padding-bottom: 1rem;
+}
 
 section { 
     padding: 2rem; 
@@ -125,8 +148,12 @@ section {
 } 
 
 #home {
-    background: linear-gradient(to left, 
-    var(--clrTheme100) 30%, var(--clrTheme900)); 
+    background: var(--clrMain100);
+    background: url(images/1.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+    opacity: 50%;
+    padding-top: 5%;
 }
 
 #home .split div img {
