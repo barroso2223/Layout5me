@@ -55,14 +55,11 @@ p {
 #about,
 #services,
 #testimonials,
-#gallery {
+#gallery,
+#contact {
     min-height: 100dvh;
     max-width: 100dvw;
-}
-
-#contact {
-    min-height: 90dvh;
-    max-width: 100dvw;
+    padding-top: 5rem;
 }
 
 
@@ -184,18 +181,27 @@ section {
     color: var(--clrMain100);
 }
 
-#home .split div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#about, #services {
-
-}
-
 #services {
-    background: var(--clrMain900);
+    background: linear-gradient(to left, var(--clrMain900), var(--clrTheme100), var(--clrMain900));
+}
+
+.serviceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: .5rem;
+}
+
+.serviceCard {
+    border: 2px solid var(--clrTheme900);
+    border-radius: .5rem;
+    box-shadow: 2px 2px 2px var(--clrMain100);
+    font-size: .75rem;
+    padding: .5rem;
+}
+
+.serviceCard h2 {
+    font-weight: 200;
 }
 
 #testimonials {
@@ -203,15 +209,15 @@ section {
 }
 
 .testimonialgrid {
+    border: 2px solid firebrick;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-auto-rows: 240px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+    padding: .5rem;
 }
 
 .testimonialCard img {
-    width: 100%;
-    height: 100%;
+    width: 40%;
     object-fit: cover;
 }
 
@@ -246,11 +252,6 @@ section {
     object-fit: cover;
 }
 
-.zoomOut img {
-    top: 0;
-    left: 1;
-}
-
 @media screen and (min-width:600px) {
     .cardTall {
         grid-row: span 2 / auto;
@@ -275,8 +276,20 @@ section {
 .contactInfo > * {
     text-decoration: none;
     color: var(--clrMain100);
-    font-size: 1rem;
+    font-size: .75rem;
+    font-weight: 100;
     padding-top: .5rem;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 .field input, .field textarea {
