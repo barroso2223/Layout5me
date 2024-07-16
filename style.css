@@ -58,13 +58,14 @@ p {
 #gallery,
 #contact {
     min-height: 100dvh;
+    max-width: 100dvw;
     padding-top: 5rem;
 }
 
 
 .img {
     display: block;
-    max-width: 100%;
+    max-width: 100dvw;
     height: 100%;
     object-fit: cover;
     place-content: center;
@@ -105,9 +106,9 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100dvw;
-    height: 11dvh;
+    height: 10dvh;
     background: linear-gradient(to left, 
-    var(--clrTheme100) 30%, var(--clrTheme900)); 
+        var(--clrTheme900), var(--clrTheme100), var(--clrTheme900)); 
     z-index: 100000;
 }
 
