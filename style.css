@@ -88,6 +88,10 @@ p {
     gap: 1rem;
 }
 
+.split > * + * {
+    margin-left: 2em;
+}
+
 header { 
     background: linear-gradient(to left, 
         var(--clrTheme100) 30%, var(--clrTheme900)); 
@@ -100,7 +104,7 @@ nav {
     position: fixed;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    width: 100dvw;
     height: 11dvh;
     background: linear-gradient(to left, 
     var(--clrTheme100) 30%, var(--clrTheme900)); 
@@ -321,7 +325,7 @@ iframe {
 }
 
 .field input, .field textarea {
-    max-width: 40dvw;
+    width: 40dvw;
 }
 
 .fa-brands,
