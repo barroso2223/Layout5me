@@ -291,6 +291,10 @@ section {
     font-size: 1rem;
 }
 
+#contact p, #contact a {
+    margin: .5rem 3rem;
+}
+
 #contact .form {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -323,6 +327,10 @@ iframe {
 .fa-solid,
 .fa-sharp {
     padding: 1rem;
+}
+
+#contact .faFonts {
+    margin-top: 1rem;
 }
 
 footer { 
