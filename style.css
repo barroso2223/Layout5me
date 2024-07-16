@@ -49,6 +49,7 @@ p {
 #home,
 #about,
 #services,
+#testimonials,
 #gallery {
     min-height: 100dvh;
 }
@@ -148,12 +149,13 @@ section {
 } 
 
 #home {
-    background: var(--clrMain100);
+    background: linear-gradient(to left, 
+    var(--clrTheme100) 30%, var(--clrTheme900)); 
     background: url(images/1.png);
-    background-blend-mode: overlay;
     background-size: cover;
-    opacity: 50%;
+    opacity: 80%;
     padding-top: 5%;
+    color: var(--clrTheme900);
 }
 
 #home .split div img {
@@ -164,6 +166,23 @@ section {
 
 #services {
     background: var(--clrMain900);
+}
+
+#testimonials {
+    background: var(--clrMain900);
+}
+
+.testimonialgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+    gap: 1rem;
+}
+
+.testimonialCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #gallery {
