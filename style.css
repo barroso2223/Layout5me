@@ -325,13 +325,18 @@ iframe {
 
 .fa-brands,
 .fa-solid,
+.fa-regular,
 .fa-sharp {
     padding: 1rem;
+    color: var(--clrMain100);
+    text-decoration: none;
 }
 
 #contact .faFonts {
     margin-top: 1rem;
+    text-decoration: none;
 }
+
 
 footer { 
     background: linear-gradient(to left, 
