@@ -58,7 +58,6 @@ p {
 #gallery,
 #contact {
     min-height: 100dvh;
-    max-width: 100dvw;
     padding-top: 5rem;
 }
 
@@ -126,7 +125,7 @@ nav ul {
         align-items: center;
         width: 100%;
         height: 11dvh;
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
         background: linear-gradient(to left, 
         var(--clrTheme100) 30%, var(--clrTheme900)); 
         z-index: 100000;
@@ -176,9 +175,27 @@ section {
     var(--clrTheme100) 30%, var(--clrTheme900)); 
     background: url(images/1.png);
     background-size: cover;
-    opacity: 80%;
+    opacity: 90%;
     padding-top: 5rem;
     color: var(--clrMain100);
+}
+
+.homeText {
+    text-align: center;
+    margin: 6rem 15rem;
+    place-content: center;
+}
+
+.homeText p {
+    font-family: "Cedarville Cursive";
+    font-size: 4rem;
+    margin-bottom: -1rem;
+}
+
+.homeText h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.6;
 }
 
 #services {
@@ -208,17 +225,27 @@ section {
     background: var(--clrMain900);
 }
 
-.testimonialgrid {
-    border: 2px solid firebrick;
+.testimonialGrid {
+    width: 100dvw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 1rem;
-    padding: .5rem;
+}
+
+.testimonialCard {
+    max-width: 500px;
+    object-fit: cover;
+    gap: 1rem;
+    overflow: hidden;
+    place-content: center;
+    margin: 1rem;
 }
 
 .testimonialCard img {
-    width: 40%;
+    width: 100%;
+    height: auto;
     object-fit: cover;
+    border-radius: .5rem;
 }
 
 #gallery {
