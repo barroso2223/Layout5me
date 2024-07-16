@@ -273,7 +273,7 @@ section {
 }
 
 #services {
-    background: linear-gradient(to left, var(--clrMain900), var(--clrTheme100), var(--clrMain900));
+    background: linear-gradient(to left, var(--clrMain900), var(--clrTheme900), var(--clrMain900));
 }
 
 .serviceGrid {
@@ -343,11 +343,6 @@ section {
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-auto-rows: 240px;
-    place-content: center;
-    place-items: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
 } 
 
 .card {
